@@ -18,6 +18,7 @@ class TeamMember(models.Model):
     street2 = fields.Char("Street 2", help="Street 2 Name for address")
     country_id = fields.Many2one("res.country", "Country", required=True, help="Country of a member")
     state_id = fields.Many2one("res.country.state", "State", required=True, help="State of a member")
+    city_id = fields.Many2one("res.state.city", "City")
     zip = fields.Char("Zip", required=True, help="Address ZIP/Postal Code")
     mobile = fields.Char("Mobile", required=True, help="Personal Mobile number of a member")
     user_id = fields.Many2one(

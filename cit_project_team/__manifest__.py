@@ -16,7 +16,10 @@
     'depends': ["base", 'project'],
     "installable" : True,
     "application" : True,
-    'data': [],
+    'data': [
+        "security/ir.model.access.csv",
+        "demo/demo_cities.xml",
+    ],
     'license': 'LGPL-3',
     'images': ['static/description/icon.png'],
 }

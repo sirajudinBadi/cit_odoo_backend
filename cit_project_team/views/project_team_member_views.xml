@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="cit_project_team.view_project_team_member_form" model="ir.ui.view">
+        <field name="name">view.project.team.member.form</field>
+        <field name="model">project.team.member</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name" />
+                        <field name="user_id" />
+                        <field name="mobile" />
+                        <field name="email" />
+                        <field name="gender" />
+                        <field name="birth_date" />
+                    </group>
+                    <group>
+                        <field name="user_image"
+                               widget="image"
+                               options="{'preview_image': 'user_image'}"
+                               style="height:64px; width:64px; border-radius:15px;"
+                        />
+                    </group>
+                    <group>
+                        <field name="house_no" />
+                        <field name="street" />
+                        <field name="street2" />
+                        <field name="country_id" />
+                        <field name="state_id" />
+                        <field name="city_id" />
+                        <field name="zip" />
+                    </group>
+                    <group>
+                        <field name="bio_data" />
+                    </group>
+
+
+                        <field name="" />
+                        <field name="" />
+                        <field name="" />
+                        <field name="" />
+
+                    <notebook>
+                        <page>
+                            <field name="timesheet_ids" />
+                        </page>
+                    </notebook>
+
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

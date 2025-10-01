@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data noupdate="1">
+
+        <record>
+            <field name="name">Amreli</field>
+            <field name="country_id" ref="base.in" />
+            <field name="state_id" ref="base.state_in_gj" />
+        </record>
+
+        <record>
+            <field name="name">Ahmedabad</field>
+            <field name="country_id" ref="base.in" />
+            <field name="state_id" ref="base.state_in_gj" />
+        </record>
+
+        <record>
+            <field name="name">Morbi</field>
+            <field name="country_id" ref="base.in" />
+            <field name="state_id" ref="base.state_in_gj" />
+        </record>
+
+        <record>
+            <field name="name">Gandhinagar</field>
+            <field name="country_id" ref="base.in" />
+            <field name="state_id" ref="base.state_in_gj" />
+        </record>
+
+        <record>
+            <field name="name">Surat</field>
+            <field name="country_id" ref="base.in" />
+            <field name="state_id" ref="base.state_in_gj" />
+        </record>
+
+        <record>
+            <field name="name">Narmada</field>
+            <field name="country_id" ref="base.in" />
+            <field name="state_id" ref="base.state_in_gj" />
+        </record>
+
+        <record>
+            <field name="name">Kutch</field>
+            <field name="country_id" ref="base.in" />
+            <field name="state_id" ref="base.state_in_gj" />
+        </record>
+
+        <record>
+            <field name="name">Junagadh</field>
+            <field name="country_id" ref="base.in" />
+            <field name="state_id" ref="base.state_in_gj" />
+        </record>
+
+        <record>
+            <field name="name">Bhavnagar</field>
+            <field name="country_id" ref="base.in" />
+            <field name="state_id" ref="base.state_in_gj" />
+        </record>
+
+        <record>
+            <field name="name">Rajkot</field>
+            <field name="country_id" ref="base.in" />
+            <field name="state_id" ref="base.state_in_gj" />
+        </record>
+
+    </data>
+</odoo>
