@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <odoo>
+    <record id="cit_project_team.view_project_team_member_tree" model="ir.ui.view">
+        <field name="name">view.project.team.member.tree</field>
+        <field name="model">project.team.member</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="user_image" widget="image" class="small-circle-img"/>
+                <field name="name"/>
+                <field name="birth_date"/>
+                <field name="email"/>
+                <field name="mobile"/>
+            </list>
+        </field>
+    </record>
+
     <record id="cit_project_team.view_project_team_member_form" model="ir.ui.view">
         <field name="name">view.project.team.member.form</field>
         <field name="model">project.team.member</field>
@@ -7,47 +21,84 @@
             <form>
                 <sheet>
                     <group>
-                        <field name="name" />
-                        <field name="user_id" />
-                        <field name="mobile" />
-                        <field name="email" />
-                        <field name="gender" />
-                        <field name="birth_date" />
+                        <group string="Personal Details">
+                            <field name="name"/>
+                            <field name="user_id"/>
+                            <field name="mobile"/>
+                            <field name="email"/>
+                            <field name="gender"/>
+                            <field name="birth_date"/>
+                        </group>
+                        <group string="Identity">
+                            <field name="user_image"
+                                   widget="image"
+                                   options="{'preview_image': 'user_image'}"
+                                   class="small-circle-img"
+                            />
+                            <field name="bio_data"/>
+                        </group>
+                        <group string="Address">
+                            <field name="house_no"/>
+                            <field name="street"/>
+                            <field name="street2"/>
+                            <field name="country_id"/>
+                            <field name="state_id"/>
+                            <field name="city_id"/>
+                            <field name="zip"/>
+                        </group>
                     </group>
-                    <group>
-                        <field name="user_image"
-                               widget="image"
-                               options="{'preview_image': 'user_image'}"
-                               style="height:64px; width:64px; border-radius:15px;"
-                        />
-                    </group>
-                    <group>
-                        <field name="house_no" />
-                        <field name="street" />
-                        <field name="street2" />
-                        <field name="country_id" />
-                        <field name="state_id" />
-                        <field name="city_id" />
-                        <field name="zip" />
-                    </group>
-                    <group>
-                        <field name="bio_data" />
-                    </group>
-
-
-                        <field name="" />
-                        <field name="" />
-                        <field name="" />
-                        <field name="" />
-
                     <notebook>
-                        <page>
-                            <field name="timesheet_ids" />
+                        <page string="Timesheets">
+                            <field name="timesheet_ids"/>
                         </page>
                     </notebook>
 
                 </sheet>
             </form>
+        </field>
+    </record>
+
+    <record id="cit_project_team.view_project_team_member_kanban" model="ir.ui.view">
+        <field name="name">view.project.team.member.kanban</field>
+        <field name="model">project.team.member</field>
+        <field name="arch" type="xml">
+            <kanban>
+                <field name="user_image"/>
+                <field name="name"/>
+                <field name="mobile"/>
+                <field name="email"/>
+
+                <templates>
+                    <t t-name="card">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <div>
+                                <field name="user_image" widget="image" class="small-circle-img"/>
+                            </div>
+                            <div>
+                                <p>
+                                    <strong>
+                                        <field name="name"/>
+                                    </strong>
+                                </p>
+                                <field name="email" class="h5 text-muted"/>
+                                <br/>
+                                <field name="mobile" class="h5 text-muted"/>
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+    <record id="cit_project_team.view_project_team_member_search" model="ir.ui.view">
+        <field name="name">view.project.team.member.search</field>
+        <field name="model">project.team.member</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name" />
+                <field name="gender" />
+            </search>
         </field>
     </record>
 </odoo>

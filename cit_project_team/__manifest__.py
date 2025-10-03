@@ -19,8 +19,15 @@
     'data': [
         "security/ir.model.access.csv",
         "demo/demo_cities.xml",
+        "views/project_team_member_menus_action.xml",
+        "views/project_team_member_views.xml",
     ],
     'license': 'LGPL-3',
     'images': ['static/description/icon.png'],
+    "assets" : {
+        "web.assets_backend" : [
+            "cit_project_team/static/src/css/styles.css",
+        ]
+    }
 }
 

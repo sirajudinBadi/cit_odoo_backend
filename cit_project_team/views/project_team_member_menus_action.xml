@@ -5,6 +5,7 @@
         <field name="name">action.project.team.member</field>
         <field name="res_model">project.team.member</field>
         <field name="view_mode">list,form,kanban</field>
+        <field name="context">{"search_default_current":1}</field>
     </record>
 
     <menuitem id="cit_project_team.menu_project_team_member_root"

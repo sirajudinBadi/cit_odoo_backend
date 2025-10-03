@@ -2,61 +2,61 @@
 <odoo>
     <data noupdate="1">
 
-        <record>
+        <record id="demo_city_amreli" model="res.state.city">
             <field name="name">Amreli</field>
             <field name="country_id" ref="base.in" />
             <field name="state_id" ref="base.state_in_gj" />
         </record>
 
-        <record>
+        <record id="demo_city_amd" model="res.state.city">
             <field name="name">Ahmedabad</field>
             <field name="country_id" ref="base.in" />
             <field name="state_id" ref="base.state_in_gj" />
         </record>
 
-        <record>
+        <record id="demo_city_mrv" model="res.state.city">
             <field name="name">Morbi</field>
             <field name="country_id" ref="base.in" />
             <field name="state_id" ref="base.state_in_gj" />
         </record>
 
-        <record>
+        <record id="demo_city_gnr" model="res.state.city">
             <field name="name">Gandhinagar</field>
             <field name="country_id" ref="base.in" />
             <field name="state_id" ref="base.state_in_gj" />
         </record>
 
-        <record>
+        <record id="demo_city_srt" model="res.state.city">
             <field name="name">Surat</field>
             <field name="country_id" ref="base.in" />
             <field name="state_id" ref="base.state_in_gj" />
         </record>
 
-        <record>
+        <record id="demo_city_nmd" model="res.state.city">
             <field name="name">Narmada</field>
             <field name="country_id" ref="base.in" />
             <field name="state_id" ref="base.state_in_gj" />
         </record>
 
-        <record>
+        <record id="demo_city" model="res.state.city">
             <field name="name">Kutch</field>
             <field name="country_id" ref="base.in" />
             <field name="state_id" ref="base.state_in_gj" />
         </record>
 
-        <record>
+        <record id="demo_city_jng" model="res.state.city">
             <field name="name">Junagadh</field>
             <field name="country_id" ref="base.in" />
             <field name="state_id" ref="base.state_in_gj" />
         </record>
 
-        <record>
+        <record id="demo_city_bhv" model="res.state.city">
             <field name="name">Bhavnagar</field>
             <field name="country_id" ref="base.in" />
             <field name="state_id" ref="base.state_in_gj" />
         </record>
 
-        <record>
+        <record id="demo_city_rjt" model="res.state.city">
             <field name="name">Rajkot</field>
             <field name="country_id" ref="base.in" />
             <field name="state_id" ref="base.state_in_gj" />

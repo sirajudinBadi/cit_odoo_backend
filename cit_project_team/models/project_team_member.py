@@ -20,13 +20,13 @@ class TeamMember(models.Model):
     state_id = fields.Many2one("res.country.state", "State", required=True, help="State of a member")
     city_id = fields.Many2one("res.state.city", "City")
     zip = fields.Char("Zip", required=True, help="Address ZIP/Postal Code")
-    mobile = fields.Char("Mobile", required=True, help="Personal Mobile number of a member")
     user_id = fields.Many2one(
         "res.users",
         required=True,
         help="User associated with this member",
         context = {"search_default_employee" : 1}
     )
+    mobile = fields.Char(related='user_id.phone', string="Mobile", required=True, help="Personal Mobile number of a member")
     email = fields.Char(related="user_id.email", required=True, help="Email ID of a member fetched from user")
     gender = fields.Selection(
         selection=[("male", "Male"), ("female", "Female"), ("other", "Other")],
